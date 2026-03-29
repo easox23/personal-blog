@@ -11,19 +11,19 @@ import Footer from "@/components/global/Footer.astro";
   <body class="flex flex-col min-h-screen bg-white">
     <!-- Full-width green banner -->
     <header class="w-full bg-base-700">
-      <div class="max-w-5xl mx-auto px-8 py-4 flex items-center justify-between gap-5">
+      <div class="max-w-5xl mx-auto px-4 md:px-8 py-4 flex items-center justify-between gap-3 relative">
         <!-- Left: logo + title + tagline -->
-        <div class="flex items-center gap-5 flex-shrink-0">
-          <a href="/">
+        <div class="flex items-center gap-3 md:gap-5 min-w-0">
+          <a href="/" class="flex-shrink-0">
             <img
               src="/img/start_image.webp"
               alt="Tech Meditations"
-              class="h-14 w-14 rounded-full object-cover"
+              class="h-12 w-12 md:h-14 md:w-14 rounded-full object-cover"
             />
           </a>
-          <div class="flex flex-col gap-0.5">
-            <a class="text-2xl font-bold tracking-tight text-white" href="/">Tech Meditations</a>
-            <p class="text-white/60 text-sm">
+          <div class="flex flex-col gap-0.5 min-w-0">
+            <a class="text-xl md:text-2xl font-bold tracking-tight text-white" href="/">Tech Meditations</a>
+            <p class="hidden sm:block text-white/60 text-sm">
               My thoughts and discoveries about the evolving tech landscape
             </p>
           </div>
