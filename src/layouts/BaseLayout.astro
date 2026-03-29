@@ -1,0 +1,42 @@
+---
+import BaseHead from "@/components/BaseHead.astro";
+import Navigation from "@/components/global/Navigation.astro";
+import Footer from "@/components/global/Footer.astro";
+---
+
+<html lang="en">
+  <head>
+    <BaseHead />
+  </head>
+  <body class="flex flex-col min-h-screen bg-white">
+    <!-- Full-width green banner -->
+    <header class="w-full bg-base-700">
+      <div class="max-w-5xl mx-auto px-8 py-4 flex items-center justify-between gap-5">
+        <!-- Left: logo + title + tagline -->
+        <div class="flex items-center gap-5 flex-shrink-0">
+          <a href="/">
+            <img
+              src="/img/start_image.webp"
+              alt="Tech Meditations"
+              class="h-14 w-14 rounded-lg object-cover"
+            />
+          </a>
+          <div class="flex flex-col gap-0.5">
+            <a class="text-2xl font-bold tracking-tight text-white" href="/">Tech Meditations</a>
+            <p class="text-white/60 text-sm">
+              My thoughts and discoveries about the evolving tech landscape
+            </p>
+          </div>
+        </div>
+        <!-- Right: nav links -->
+        <Navigation />
+      </div>
+    </header>
+
+    <main class="flex-grow max-w-5xl w-full mx-auto px-8">
+      <slot />
+    </main>
+
+    <Footer />
+  </body>
+</html>

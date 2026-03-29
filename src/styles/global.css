@@ -1,0 +1,47 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/forms";
+@plugin "@tailwindcss/typography";
+@theme {
+  --font-sans: Inter, sans-serif;
+  --font-display: InterDisplay, monospace;
+  --font-mono: JetBrains Mono, monospace;
+  /* Forest/teal palette from ealejo.dev */
+  --color-base-50: oklch(97% 0.008 158);
+  --color-base-100: oklch(93% 0.012 158);
+  --color-base-200: oklch(83% 0.022 158);
+  --color-base-300: oklch(77% 0.04 162);
+  --color-base-400: oklch(72% 0.055 160);
+  --color-base-500: oklch(67% 0.068 155);   /* #84a98c sage green */
+  --color-base-600: oklch(47% 0.062 185);   /* #52796f muted teal */
+  --color-base-700: oklch(31% 0.038 215);   /* #384b56 dark teal */
+  --color-base-800: oklch(27% 0.033 220);   /* #314149 dark slate */
+  --color-base-900: oklch(18% 0.028 222);   /* #212b31 near-black navy */
+  --color-base-950: oklch(14% 0.02 222);
+}
+/* CSS */
+:root {
+  font-family: Inter, sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  /* Use variable font if supported */
+  :root {
+    font-family: InterVariable, sans-serif;
+  }
+}
+.prose p {
+  text-align: justify;
+}
+
+:root {
+  --astro-code-color-text: #000000;
+  --astro-code-background: #f5f5f5;
+  --astro-code-token-constant: #00000080;
+  --astro-code-token-string: #00000050;
+  --astro-code-token-comment: #00000060;
+  --astro-code-token-keyword: black;
+  --astro-code-token-parameter: #ffffff;
+  --astro-code-token-function: black;
+  --astro-code-token-string-expression: #2522fc;
+  --astro-code-token-punctuation: #ffffff;
+  --astro-code-token-link: #ffffff;
+}
