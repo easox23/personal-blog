@@ -1,6 +1,7 @@
 # Build output
 dist/
 .astro/
+public/pagefind/
 
 # Dependencies
 node_modules/
