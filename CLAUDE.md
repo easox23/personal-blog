@@ -54,3 +54,7 @@ Custom color palette uses oklch format under the `base-*` scale (50–950), a fo
 Typography plugin (`@tailwindcss/typography`) is used for prose content. The `prose` class gets `max-w-none` to fill its container rather than using the plugin's default `65ch` cap.
 
 Alpine.js is loaded via CDN in `BaseHead.astro` and used for the Categories dropdown and mobile hamburger menu in `Navigation.astro`.
+
+## Workflow rules
+
+- **Do not `git push` unless the user explicitly asks.** Commit locally as needed, but wait for instruction before pushing.
